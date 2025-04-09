@@ -16,5 +16,16 @@
             "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
         }
     ],    
-    "require": {}
+    "require": {
+        "pantheon-systems/pantheon-mu-plugin": "^1.5",
+        "pantheon-systems/pantheon-advanced-page-cache": "^2.1",
+        "pantheon-systems/wp-native-php-sessions": "^1.4",
+        "wpackagist-theme/twentytwentyfive": "^1.1",
+        "wpackagist-plugin/akismet": "^5.3"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
 }

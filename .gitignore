@@ -1,3 +1,10 @@
+# composer-managed
+wp-content/mu-plugins/pantheon-mu-plugin
+wp-content/plugins/akismet
+wp-content/plugins/pantheon-advanced-page-cache
+wp-content/plugins/wp-native-php-sessions
+wp-content/themes/twentytwentyfive
+
 # WordPress #
 ############
 wp-config-local.php
