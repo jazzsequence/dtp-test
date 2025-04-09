@@ -18,8 +18,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Composer dependencies
+        run: composer install
+
       - name: Push to Pantheon
-        uses: stevector/push-to-pantheon@0.3.0
+        uses: stevector/push-to-pantheon@checkout_repo
         with:
           ssh_key: ${{ secrets.SSH_KEY }}
           site: cxr-dtp-test
