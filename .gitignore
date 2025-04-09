@@ -18,8 +18,15 @@ wp-content/backupwordpress-*/
 wp-content/managewp/backups/
 wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
+wp-admin/
+wp-includes/
 sitemap.xml
 sitemap.xml.gz
+license.txt
+readme.html
+wp-*.php
+index.php
+xmlrpc.php
 
 # @TODO writable paths
 wp-content/cache/
