@@ -28,3 +28,4 @@ jobs:
           site: cxr-dtp-test
           machine_token: ${{ secrets.TERMINUS_TOKEN }}
           target_env: dev
+          checkout_repo: false
