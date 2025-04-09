@@ -1,0 +1,20 @@
+{
+    "name": "jazzsequence/dtp-test",
+    "description": "Test the deploy-to-Pantheon workflow with a build pipeline",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Chris Reynolds",
+            "email": "chris@jazzsequence.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+        }
+    ],    
+    "require": {}
+}
