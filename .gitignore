@@ -27,6 +27,7 @@ readme.html
 wp-*.php
 index.php
 xmlrpc.php
+_wordpress
 
 # @TODO writable paths
 wp-content/cache/
