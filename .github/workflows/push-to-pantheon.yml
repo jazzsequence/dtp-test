@@ -1,0 +1,21 @@
+name: Deploy to Pantheon
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Push to Pantheon
+        uses: stevector/push-to-pantheon@0.3.0
+        with:
+          ssh_key: ${{ secrets.SSH_KEY }}
+          site: cxr-dtp-test
+          machine_token: ${{ secrets.TERMINUS_TOKEN }}
