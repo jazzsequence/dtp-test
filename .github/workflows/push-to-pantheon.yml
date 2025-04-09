@@ -18,6 +18,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Get WordPress from upstream
+        run: |
+          git remote add upstream git@github.com:pantheon-systems/WordPress.git
+          echo "Fetching WordPress from remote"
+          git fetch upstream
+          rsync -av --exclude='wp-content/' --ignore-existing upstream/master/ ./
+
       - name: Composer dependencies
         run: composer install
 
