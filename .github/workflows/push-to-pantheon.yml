@@ -25,7 +25,7 @@ jobs:
 
       - name: Pull from Pantheon
         run: |
-          git clone sh://codeserver.dev.${{secrets.SITE_ID}}@codeserver.dev.${{secrets.SITE_ID}}.drush.in:2222/~/repository.git pantheon-repo
+          git clone ssh://codeserver.dev.${{secrets.SITE_ID}}@codeserver.dev.${{secrets.SITE_ID}}.drush.in:2222/~/repository.git pantheon-repo
           rsync -a --ignore-existing --exclude='.git' pantheon-repo/ ./
           rm -rf pantheon-repo/
 
