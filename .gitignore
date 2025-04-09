@@ -25,6 +25,7 @@ sitemap.xml.gz
 license.txt
 readme.html
 wp-*.php
+!wp-config.php
 index.php
 xmlrpc.php
 _wordpress
