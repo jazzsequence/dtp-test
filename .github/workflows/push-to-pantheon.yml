@@ -18,6 +18,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Configure SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_KEY }}
+
       - name: Pull from Pantheon
         run: |
           git clone sh://codeserver.dev.${{secrets.SITE_ID}}@codeserver.dev.${{secrets.SITE_ID}}.drush.in:2222/~/repository.git pantheon-repo
