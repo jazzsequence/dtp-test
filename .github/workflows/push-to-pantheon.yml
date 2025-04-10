@@ -14,6 +14,7 @@ permissions:
 
 jobs:
   deploy:
+    name: Push to Pantheon
     runs-on: ubuntu-latest
 
     steps:
