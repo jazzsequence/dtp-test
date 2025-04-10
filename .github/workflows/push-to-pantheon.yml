@@ -18,15 +18,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install Terminus
-        uses: pantheon-systems/terminus-github-actions@v1
+      - name: Configure SSH
+        uses: webfactory/ssh-agent@v0.9.0
         with:
-          pantheon-machine-token: ${{ secrets.TERMINUS_TOKEN }}
+          ssh-private-key: ${{ secrets.SSH_KEY }}
+
+      - name: Configure Pantheon Host Key
+        run: |
+          echo "Host *.drush.in HostKeyAlgorithms +ssh-rsa" >> ~/.ssh/config
+          echo "Host *.drush.in PubkeyAcceptedKeyTypes +ssh-rsa" >> ~/.ssh/config
+          echo "StrictHostKeyChecking no" >> ~/.ssh/config
 
       - name: Pull from Pantheon
         run: |
-          terminus local:clone cxr-dtp-test
-          rsync -a --ignore-existing --exclude='.git' ~/pantheon-local-copies/cxr-dtp-test/ ./
+          git clone ssh://codeserver.dev.${{secrets.SITE_ID}}@codeserver.dev.${{secrets.SITE_ID}}.drush.in:2222/~/repository.git pantheon-repo
+          rsync -a --ignore-existing --exclude='.git' pantheon-repo/ ./
+          rm -rf pantheon-repo/
 
       - name: Composer dependencies
         run: composer install
