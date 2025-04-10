@@ -19,8 +19,7 @@ jobs:
 
       - name: Install Playwright
         run: |
-          npm install -D playwright
-          npx playwright install --with-deps
+          npm install -D playwright @playwright/test
 
       - name: Install Terminus
         uses: pantheon-systems/terminus-github-actions@v1
@@ -33,4 +32,4 @@ jobs:
       - name: Run Playwright test
         env:
           BASE_URL: https://dev-cxr-dtp-test.pantheonsite.io
-        run: npx playwright test ../tests/postDeploy.spec.ts
+        run: npx playwright test "${{ github.workspace }}/.github/tests/postDeploy.spec.ts"
