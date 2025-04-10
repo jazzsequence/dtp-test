@@ -70,7 +70,22 @@ $table_prefix = 'wp_';
  * "true" in dev, but false in test and live.
  */
 if ( ! defined( 'WP_DEBUG' ) ) {
-	define('WP_DEBUG', false);
+	switch ($_ENV['PANTHEON_ENVIRONMENT']) {
+		case 'dev':
+			define( 'WP_DEBUG', true );
+			define( 'WP_DEBUG_DISPLAY', true );
+			define( 'WP_DEBUG_LOG', true );
+			break;
+		case 'test':
+			define('WP_DEBUG', true);
+			define('WP_DEBUG_DISPLAY', false);
+			define('WP_DEBUG_LOG', true);			
+			break;
+		case 'live':
+		default:
+			define( 'WP_DEBUG', false );
+			break;
+	}
 }
 
 /* That's all, stop editing! Happy Pressing. */
