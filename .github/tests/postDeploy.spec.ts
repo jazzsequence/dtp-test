@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 const BASE_URL = process.env.BASE_URL || 'https://dev-cxr-dtp-test.pantheonsite.io';
 
-test.describe('Pantheon post-deploy sanity checks', () => {
+test.describe('Does the site still work?', () => {
   test('Homepage renders without error', async ({ page }) => {
     const res = await page.goto(BASE_URL);
     expect(res?.status()).toBe(200);
