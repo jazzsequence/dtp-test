@@ -6,7 +6,8 @@ test.describe('Pantheon post-deploy sanity checks', () => {
   test('Homepage renders without error', async ({ page }) => {
     const res = await page.goto(BASE_URL);
     expect(res?.status()).toBe(200);
-    await expect(page).not.toHaveText(/Fatal error|Warning:|Notice:/i);
+    const content = await page.content();
+	expect(content).not.toMatch(/Fatal error|Warning:|Notice:/i);
     await expect(page.locator('body')).toBeVisible();
   });
 
@@ -24,10 +25,11 @@ test.describe('Pantheon post-deploy sanity checks', () => {
     await expect(page).not.toHaveText(/Fatal error|Warning:|Notice:/i);
   });
 
-  test('Headers expected', async({ page }) => {
-	  const headers = res?.headers();
-	  expect(headers['x-pantheon-styx-hostname']).toBeDefined();
-	  expect(headers['content-type']).toMatch(/text\/html/);
-  });
+  test('Headers expected', async ({ page }) => {
+	const res = await page.goto(BASE_URL);
+	const headers = res?.headers();
+	expect(headers?.['x-pantheon-styx-hostname']).toBeDefined();
+	expect(headers?.['content-type']).toMatch(/text\/html/);
+  });  
 
 });
