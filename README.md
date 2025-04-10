@@ -17,3 +17,5 @@ xmlrpc.php
 ```
 
 This allows those files to be safely deleted locally, not managed in the GitHub repository, but left alone in the Pantheon repository.
+
+In order to not overwrite the WordPress core filesystem, the [`push-to-pantheon`](https://github.com/jazzsequence/dtp-test/blob/main/.github/workflows/push-to-pantheon.yml) workflow is pulling down files from the Pantheon site repository and overlaying changes from this repository on top of them.
