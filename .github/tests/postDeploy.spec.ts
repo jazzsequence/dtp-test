@@ -15,14 +15,16 @@ test.describe('Pantheon post-deploy sanity checks', () => {
     const res = await page.goto(`${BASE_URL}/hello-world/`);
     expect(res?.status()).toBe(200);
     await expect(page.locator('h1')).toContainText(/Hello world!/i);
-    await expect(page).not.toHaveText(/Fatal error|Warning:|Notice:/i);
+	const content = await page.content();
+	expect(content).not.toMatch(/Fatal error|Warning:|Notice:/i);
   });
 
   test('"Sample Page" loads', async ({ page }) => {
     const res = await page.goto(`${BASE_URL}/sample-page/`);
     expect(res?.status()).toBe(200);
     await expect(page.locator('h1')).toContainText(/Sample Page/i);
-    await expect(page).not.toHaveText(/Fatal error|Warning:|Notice:/i);
+	const content = await page.content();
+	expect(content).not.toMatch(/Fatal error|Warning:|Notice:/i);	
   });
 
   test('Headers expected', async ({ page }) => {
