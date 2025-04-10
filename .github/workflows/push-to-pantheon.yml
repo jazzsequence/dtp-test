@@ -4,9 +4,8 @@ on:
   push:
     branches:
       - main
-  ignore:
-    paths:
-      - .github/*
+  ignore-paths:
+    - .github/*
 
 permissions:
   contents: write
