@@ -45,8 +45,26 @@ jobs:
 
       - name: Push to Pantheon
         uses: stevector/push-to-pantheon@0.4.0
+        id: deploy
         with:
           ssh_key: ${{ secrets.SSH_KEY }}
           site: cxr-dtp-test
           machine_token: ${{ secrets.TERMINUS_TOKEN }}
           target_env: dev
+  
+      - name: Install Node.js
+        if: ${{ steps.deploy.outcome == 'success' }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install Playwright
+        run: |
+          npm install -D playwright
+          npx playwright install --with-deps
+
+      - name: Run Playwright test
+        env:
+          BASE_URL: https://dev-cxr-dtp-test.pantheonsite.io
+        run: npx playwright test tests/postDeploy.spec.ts
+  
