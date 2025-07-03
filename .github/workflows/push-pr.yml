@@ -1,4 +1,4 @@
-name: Deploy to Pantheon Multidev
+name: Deploy
 
 on:
   pull_request:
@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   deploy:
-    name: Push to Pantheon
+    name: Push to Pantheon and Test
     runs-on: ubuntu-latest
 
     steps:
@@ -65,4 +65,4 @@ jobs:
       - name: Run Playwright test
         env:
           BASE_URL: https://pr-${{ github.event.pull_request.number }}-cxr-dtp-test.pantheonsite.io
-        run: npx playwright test "${BASE_URL}/.github/tests/postDeploy.spec.ts"
+        run: npx playwright test "${{ github.workspace }}/.github/tests/postDeploy.spec.ts"
