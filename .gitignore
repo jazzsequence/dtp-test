@@ -64,3 +64,8 @@ Thumbs.db
 .sass-cache
 
 /vendor/
+/node_modules/
+
+# Ignore node. Not required for the site.
+package.json
+package-lock.json
