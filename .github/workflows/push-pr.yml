@@ -50,7 +50,7 @@ jobs:
           ssh_key: ${{ secrets.SSH_KEY }}
           site: cxr-dtp-test
           machine_token: ${{ secrets.TERMINUS_TOKEN }}
-          target_env: dev
+          target_env: pr-${{ github.event.pull_request.number }}
 
       - name: Install Node.js
         uses: actions/setup-node@v4
