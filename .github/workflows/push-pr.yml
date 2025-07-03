@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   deploy:
-    name: Push to Pantheon and Test
+    name: Push to Pantheon
     runs-on: ubuntu-latest
 
     steps:
@@ -51,6 +51,13 @@ jobs:
           site: cxr-dtp-test
           machine_token: ${{ secrets.TERMINUS_TOKEN }}
           target_env: pr-${{ github.event.pull_request.number }}
+  
+  playwright:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
       - name: Install Node.js
         uses: actions/setup-node@v4
