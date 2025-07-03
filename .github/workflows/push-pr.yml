@@ -42,7 +42,7 @@ jobs:
         run: |
           terminus wp cxr-dtp-test.pr-${{ github.event.pull_request.number }} -- core install --url=https://pr-${{ github.event.pull_request.number }}-cxr-dtp-test.pantheonsite.io --title="Deploy to Pantheon test" --admin_user=robot --admin_email=robot@dev.null
           echo "Update Rewrite structure and flush permalinks"
-          terminus wp cxr-dtp-test.pr-${{ github.event.pull_request.number }} -- rewrite structure rewrite structure "/%year%/%monthnum%/%postname%/"
+          terminus wp cxr-dtp-test.pr-${{ github.event.pull_request.number }} -- rewrite structure "/%year%/%monthnum%/%postname%/"
           terminus wp cxr-dtp-test.pr-${{ github.event.pull_request.number }} -- rewrite flush
           # Delete Terminus symlink to not conflict with push action later...
           rm /usr/local/bin/terminus
