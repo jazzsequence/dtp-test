@@ -41,6 +41,8 @@ jobs:
       - name: Install WP
         run: |
           terminus wp cxr-dtp-test.pr-${{ github.event.pull_request.number }} -- core install --url=https://pr-${{ github.event.pull_request.number }}-cxr-dtp-test.pantheonsite.io --title="Deploy to Pantheon test" --admin_user=robot --admin_email=robot@dev.null
+          # Delete Terminus symlink to not conflict with push action later...
+          rm /usr/local/bin/terminus
 
       - name: Pull from Pantheon
         run: |
@@ -62,6 +64,7 @@ jobs:
           target_env: pr-${{ github.event.pull_request.number }}
   
   playwright:
+    name: Playwright Tests
     needs: deploy
     runs-on: ubuntu-latest
     steps:
