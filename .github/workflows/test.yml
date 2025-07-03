@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   test:
@@ -25,14 +22,6 @@ jobs:
         run: |
           npm install -D playwright @playwright/test
           npx playwright install
-
-      - name: Install Terminus
-        uses: pantheon-systems/terminus-github-actions@v1
-        with:
-          pantheon-machine-token: ${{ secrets.TERMINUS_TOKEN }}
-
-      - name: Wait for Pantheon build to complete
-        run: terminus workflow:wait cxr-dtp-test.dev --max=30
 
       - name: Run Playwright test
         env:
