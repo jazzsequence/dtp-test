@@ -33,6 +33,15 @@ jobs:
           echo "Host *.drush.in PubkeyAcceptedKeyTypes +ssh-rsa" >> ~/.ssh/config
           echo "StrictHostKeyChecking no" >> ~/.ssh/config
 
+      - name: Install Terminus
+        uses: pantheon-systems/terminus-github-actions@1.2.7
+        with:
+          terminus_token: ${{ secrets.TERMINUS_TOKEN }}
+
+      - name: Install WP
+        run: |
+          terminus wp cxr-dtp-test.pr-${{ github.event.pull_request.number }} -- core install --url=https://pr-${{ github.event.pull_request.number }}-cxr-dtp-test.pantheonsite.io --title="Deploy to Pantheon test" --admin_user=robot --admin_email=robot@dev.null
+
       - name: Pull from Pantheon
         run: |
           git clone ssh://codeserver.dev.${{secrets.SITE_ID}}@codeserver.dev.${{secrets.SITE_ID}}.drush.in:2222/~/repository.git pantheon-repo
