@@ -1,6 +1,6 @@
 # Deploy to Pantheon test
 
-[![Test](https://github.com/jazzsequence/dtp-test/actions/workflows/test.yml/badge.svg)](https://github.com/jazzsequence/dtp-test/actions/workflows/test.yml)
+[![Deploy](https://github.com/jazzsequence/dtp-test/actions/workflows/push-pr.yml/badge.svg)](https://github.com/jazzsequence/dtp-test/actions/workflows/push-pr.yml)
 [![Dev environment](https://img.shields.io/badge/dev-yellow?logo=pantheon&logoColor=yellow&label=cxr-dtp-test&color=yellow
 )](https://dev-cxr-dtp-test.pantheonsite.io)
 
