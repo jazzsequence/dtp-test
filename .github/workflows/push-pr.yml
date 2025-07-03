@@ -36,7 +36,7 @@ jobs:
       - name: Install Terminus
         uses: pantheon-systems/terminus-github-actions@v1.2.7
         with:
-          terminus_token: ${{ secrets.TERMINUS_TOKEN }}
+          pantheon-machine-token: ${{ secrets.TERMINUS_TOKEN }}
 
       - name: Install WP
         run: |
