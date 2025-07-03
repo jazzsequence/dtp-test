@@ -34,7 +34,7 @@ jobs:
           echo "StrictHostKeyChecking no" >> ~/.ssh/config
 
       - name: Install Terminus
-        uses: pantheon-systems/terminus-github-actions@1.2.7
+        uses: pantheon-systems/terminus-github-actions@v1.2.7
         with:
           terminus_token: ${{ secrets.TERMINUS_TOKEN }}
 
