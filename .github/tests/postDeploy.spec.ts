@@ -2,6 +2,10 @@ import { test, expect } from '@playwright/test';
 
 const BASE_URL = process.env.BASE_URL || 'https://dev-cxr-dtp-test.pantheonsite.io';
 
+await page.setExtraHTTPHeaders({
+  'Deterrence-Bypass': '1',
+});
+
 test.describe('Does the site still work?', () => {
   test('Homepage renders without error', async ({ page }) => {
     const res = await page.goto(BASE_URL);
