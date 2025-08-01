@@ -7,7 +7,7 @@
  *
  * https://pantheon.io/docs
  */
-
+// arbitrary change to test git commit
 /**
  * Pantheon platform settings. Everything you need should already be set.
  */
