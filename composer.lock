@@ -290,24 +290,24 @@
         },
         {
             "name": "pantheon-systems/wp-native-php-sessions",
-            "version": "1.4.3",
+            "version": "1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/wp-native-php-sessions.git",
-                "reference": "1c7f84e4a89ae4dc1ee62f90725af2f281fc50fe"
+                "reference": "7bd9c848efcd3eb2645646edf6c72ca0914cb5b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/wp-native-php-sessions/zipball/1c7f84e4a89ae4dc1ee62f90725af2f281fc50fe",
-                "reference": "1c7f84e4a89ae4dc1ee62f90725af2f281fc50fe",
+                "url": "https://api.github.com/repos/pantheon-systems/wp-native-php-sessions/zipball/7bd9c848efcd3eb2645646edf6c72ca0914cb5b5",
+                "reference": "7bd9c848efcd3eb2645646edf6c72ca0914cb5b5",
                 "shasum": ""
             },
             "require-dev": {
                 "pantheon-systems/pantheon-wordpress-upstream-tests": "dev-master",
-                "pantheon-systems/pantheon-wp-coding-standards": "^2.0",
-                "pantheon-systems/wpunit-helpers": "^1.0",
+                "pantheon-systems/pantheon-wp-coding-standards": "^3.0",
+                "pantheon-systems/wpunit-helpers": "^2.0",
                 "phpunit/phpunit": "^9",
-                "yoast/phpunit-polyfills": "^2.0"
+                "yoast/phpunit-polyfills": "^4.0"
             },
             "type": "wordpress-plugin",
             "notification-url": "https://packagist.org/downloads/",
@@ -327,9 +327,9 @@
             "description": "native PHP sessions stored in the database for WordPress.",
             "support": {
                 "issues": "https://github.com/pantheon-systems/wp-native-php-sessions/issues",
-                "source": "https://github.com/pantheon-systems/wp-native-php-sessions/tree/1.4.3"
+                "source": "https://github.com/pantheon-systems/wp-native-php-sessions/tree/1.4.4"
             },
-            "time": "2023-11-13T19:20:32+00:00"
+            "time": "2025-09-17T19:12:50+00:00"
         },
         {
             "name": "phpoption/phpoption",
