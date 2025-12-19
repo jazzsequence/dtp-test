@@ -255,23 +255,23 @@
         },
         {
             "name": "pantheon-systems/pantheon-mu-plugin",
-            "version": "1.5.3",
+            "version": "1.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/pantheon-mu-plugin.git",
-                "reference": "085f4704b1e4c76693a5c4c44f43c60e7c5e0a78"
+                "reference": "c4004a29ec4a8c5405bc44fc3b3057be9ad39d7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/pantheon-mu-plugin/zipball/085f4704b1e4c76693a5c4c44f43c60e7c5e0a78",
-                "reference": "085f4704b1e4c76693a5c4c44f43c60e7c5e0a78",
+                "url": "https://api.github.com/repos/pantheon-systems/pantheon-mu-plugin/zipball/c4004a29ec4a8c5405bc44fc3b3057be9ad39d7c",
+                "reference": "c4004a29ec4a8c5405bc44fc3b3057be9ad39d7c",
                 "shasum": ""
             },
             "require": {
                 "vlucas/phpdotenv": "*"
             },
             "require-dev": {
-                "pantheon-systems/pantheon-wp-coding-standards": "^2.0",
+                "pantheon-systems/pantheon-wp-coding-standards": "^3.0",
                 "pantheon-systems/wpunit-helpers": "^2.0",
                 "phpunit/phpunit": "^9",
                 "yoast/phpunit-polyfills": "^2.0"
@@ -284,9 +284,9 @@
             "description": "Pantheon mu-plugin for WordPress sites.",
             "support": {
                 "issues": "https://github.com/pantheon-systems/pantheon-mu-plugin/issues",
-                "source": "https://github.com/pantheon-systems/pantheon-mu-plugin/tree/1.5.3"
+                "source": "https://github.com/pantheon-systems/pantheon-mu-plugin/tree/1.5.4"
             },
-            "time": "2025-03-11T21:43:35+00:00"
+            "time": "2025-12-10T16:24:53+00:00"
         },
         {
             "name": "pantheon-systems/wp-native-php-sessions",
@@ -333,16 +333,16 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.9.3",
+            "version": "1.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "e3fac8b24f56113f7cb96af14958c0dd16330f54"
+                "reference": "638a154f8d4ee6a5cfa96d6a34dfbe0cffa9566d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/e3fac8b24f56113f7cb96af14958c0dd16330f54",
-                "reference": "e3fac8b24f56113f7cb96af14958c0dd16330f54",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/638a154f8d4ee6a5cfa96d6a34dfbe0cffa9566d",
+                "reference": "638a154f8d4ee6a5cfa96d6a34dfbe0cffa9566d",
                 "shasum": ""
             },
             "require": {
@@ -350,7 +350,7 @@
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.2",
-                "phpunit/phpunit": "^8.5.39 || ^9.6.20 || ^10.5.28"
+                "phpunit/phpunit": "^8.5.44 || ^9.6.25 || ^10.5.53 || ^11.5.34"
             },
             "type": "library",
             "extra": {
@@ -392,7 +392,7 @@
             ],
             "support": {
                 "issues": "https://github.com/schmittjoh/php-option/issues",
-                "source": "https://github.com/schmittjoh/php-option/tree/1.9.3"
+                "source": "https://github.com/schmittjoh/php-option/tree/1.9.4"
             },
             "funding": [
                 {
@@ -404,11 +404,11 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-07-20T21:41:07+00:00"
+            "time": "2025-08-21T11:53:16+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.32.0",
+            "version": "v1.33.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -467,7 +467,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.32.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.33.0"
             },
             "funding": [
                 {
@@ -479,6 +479,10 @@
                     "type": "github"
                 },
                 {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
                     "type": "tidelift"
                 }
@@ -487,7 +491,7 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.32.0",
+            "version": "v1.33.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -548,7 +552,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.32.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.33.0"
             },
             "funding": [
                 {
@@ -560,6 +564,10 @@
                     "type": "github"
                 },
                 {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
                     "type": "tidelift"
                 }
@@ -568,7 +576,7 @@
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.32.0",
+            "version": "v1.33.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
@@ -628,7 +636,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.32.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.33.0"
             },
             "funding": [
                 {
@@ -637,6 +645,10 @@
                 },
                 {
                     "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
                     "type": "github"
                 },
                 {
