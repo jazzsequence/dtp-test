@@ -290,16 +290,16 @@
         },
         {
             "name": "pantheon-systems/wp-native-php-sessions",
-            "version": "1.4.4",
+            "version": "1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/wp-native-php-sessions.git",
-                "reference": "7bd9c848efcd3eb2645646edf6c72ca0914cb5b5"
+                "reference": "aa99229bdcdb1e366296fcf23afe1aa372c5d986"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/wp-native-php-sessions/zipball/7bd9c848efcd3eb2645646edf6c72ca0914cb5b5",
-                "reference": "7bd9c848efcd3eb2645646edf6c72ca0914cb5b5",
+                "url": "https://api.github.com/repos/pantheon-systems/wp-native-php-sessions/zipball/aa99229bdcdb1e366296fcf23afe1aa372c5d986",
+                "reference": "aa99229bdcdb1e366296fcf23afe1aa372c5d986",
                 "shasum": ""
             },
             "require-dev": {
@@ -327,9 +327,9 @@
             "description": "native PHP sessions stored in the database for WordPress.",
             "support": {
                 "issues": "https://github.com/pantheon-systems/wp-native-php-sessions/issues",
-                "source": "https://github.com/pantheon-systems/wp-native-php-sessions/tree/1.4.4"
+                "source": "https://github.com/pantheon-systems/wp-native-php-sessions/tree/1.4.5"
             },
-            "time": "2025-09-17T19:12:50+00:00"
+            "time": "2025-12-04T16:01:44+00:00"
         },
         {
             "name": "phpoption/phpoption",
