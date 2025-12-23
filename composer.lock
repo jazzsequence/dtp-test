@@ -216,16 +216,16 @@
         },
         {
             "name": "pantheon-systems/pantheon-advanced-page-cache",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/pantheon-advanced-page-cache.git",
-                "reference": "9749ea2a7d06f036b3e96f8204541dbd3e5949cb"
+                "reference": "68b43e7564ce9acd131757f1a3f6685b30323228"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/pantheon-advanced-page-cache/zipball/9749ea2a7d06f036b3e96f8204541dbd3e5949cb",
-                "reference": "9749ea2a7d06f036b3e96f8204541dbd3e5949cb",
+                "url": "https://api.github.com/repos/pantheon-systems/pantheon-advanced-page-cache/zipball/68b43e7564ce9acd131757f1a3f6685b30323228",
+                "reference": "68b43e7564ce9acd131757f1a3f6685b30323228",
                 "shasum": ""
             },
             "require-dev": {
@@ -233,11 +233,11 @@
                 "behat/mink-extension": "^2.2",
                 "behat/mink-goutte-driver": "^1.2",
                 "pantheon-systems/pantheon-wordpress-upstream-tests": "dev-master",
-                "pantheon-systems/pantheon-wp-coding-standards": "^2.0",
+                "pantheon-systems/pantheon-wp-coding-standards": "^3.0",
                 "pantheon-systems/wpunit-helpers": "^2.0",
                 "phpcompatibility/php-compatibility": "^9.3",
                 "phpunit/phpunit": "^9",
-                "yoast/phpunit-polyfills": "^2.0"
+                "yoast/phpunit-polyfills": "^4.0"
             },
             "type": "wordpress-plugin",
             "notification-url": "https://packagist.org/downloads/",
@@ -249,9 +249,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pantheon-systems/pantheon-advanced-page-cache/issues",
-                "source": "https://github.com/pantheon-systems/pantheon-advanced-page-cache/tree/2.1.1"
+                "source": "https://github.com/pantheon-systems/pantheon-advanced-page-cache/tree/2.1.2"
             },
-            "time": "2025-02-25T23:31:41+00:00"
+            "time": "2025-12-16T18:05:36+00:00"
         },
         {
             "name": "pantheon-systems/pantheon-mu-plugin",
