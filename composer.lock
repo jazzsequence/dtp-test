@@ -216,16 +216,16 @@
         },
         {
             "name": "pantheon-systems/pantheon-advanced-page-cache",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/pantheon-advanced-page-cache.git",
-                "reference": "9749ea2a7d06f036b3e96f8204541dbd3e5949cb"
+                "reference": "68b43e7564ce9acd131757f1a3f6685b30323228"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/pantheon-advanced-page-cache/zipball/9749ea2a7d06f036b3e96f8204541dbd3e5949cb",
-                "reference": "9749ea2a7d06f036b3e96f8204541dbd3e5949cb",
+                "url": "https://api.github.com/repos/pantheon-systems/pantheon-advanced-page-cache/zipball/68b43e7564ce9acd131757f1a3f6685b30323228",
+                "reference": "68b43e7564ce9acd131757f1a3f6685b30323228",
                 "shasum": ""
             },
             "require-dev": {
@@ -233,11 +233,11 @@
                 "behat/mink-extension": "^2.2",
                 "behat/mink-goutte-driver": "^1.2",
                 "pantheon-systems/pantheon-wordpress-upstream-tests": "dev-master",
-                "pantheon-systems/pantheon-wp-coding-standards": "^2.0",
+                "pantheon-systems/pantheon-wp-coding-standards": "^3.0",
                 "pantheon-systems/wpunit-helpers": "^2.0",
                 "phpcompatibility/php-compatibility": "^9.3",
                 "phpunit/phpunit": "^9",
-                "yoast/phpunit-polyfills": "^2.0"
+                "yoast/phpunit-polyfills": "^4.0"
             },
             "type": "wordpress-plugin",
             "notification-url": "https://packagist.org/downloads/",
@@ -249,29 +249,29 @@
             ],
             "support": {
                 "issues": "https://github.com/pantheon-systems/pantheon-advanced-page-cache/issues",
-                "source": "https://github.com/pantheon-systems/pantheon-advanced-page-cache/tree/2.1.1"
+                "source": "https://github.com/pantheon-systems/pantheon-advanced-page-cache/tree/2.1.2"
             },
-            "time": "2025-02-25T23:31:41+00:00"
+            "time": "2025-12-16T18:05:36+00:00"
         },
         {
             "name": "pantheon-systems/pantheon-mu-plugin",
-            "version": "1.5.3",
+            "version": "1.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/pantheon-mu-plugin.git",
-                "reference": "085f4704b1e4c76693a5c4c44f43c60e7c5e0a78"
+                "reference": "c4004a29ec4a8c5405bc44fc3b3057be9ad39d7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/pantheon-mu-plugin/zipball/085f4704b1e4c76693a5c4c44f43c60e7c5e0a78",
-                "reference": "085f4704b1e4c76693a5c4c44f43c60e7c5e0a78",
+                "url": "https://api.github.com/repos/pantheon-systems/pantheon-mu-plugin/zipball/c4004a29ec4a8c5405bc44fc3b3057be9ad39d7c",
+                "reference": "c4004a29ec4a8c5405bc44fc3b3057be9ad39d7c",
                 "shasum": ""
             },
             "require": {
                 "vlucas/phpdotenv": "*"
             },
             "require-dev": {
-                "pantheon-systems/pantheon-wp-coding-standards": "^2.0",
+                "pantheon-systems/pantheon-wp-coding-standards": "^3.0",
                 "pantheon-systems/wpunit-helpers": "^2.0",
                 "phpunit/phpunit": "^9",
                 "yoast/phpunit-polyfills": "^2.0"
@@ -284,22 +284,22 @@
             "description": "Pantheon mu-plugin for WordPress sites.",
             "support": {
                 "issues": "https://github.com/pantheon-systems/pantheon-mu-plugin/issues",
-                "source": "https://github.com/pantheon-systems/pantheon-mu-plugin/tree/1.5.3"
+                "source": "https://github.com/pantheon-systems/pantheon-mu-plugin/tree/1.5.4"
             },
-            "time": "2025-03-11T21:43:35+00:00"
+            "time": "2025-12-10T16:24:53+00:00"
         },
         {
             "name": "pantheon-systems/wp-native-php-sessions",
-            "version": "1.4.4",
+            "version": "1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/wp-native-php-sessions.git",
-                "reference": "7bd9c848efcd3eb2645646edf6c72ca0914cb5b5"
+                "reference": "aa99229bdcdb1e366296fcf23afe1aa372c5d986"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/wp-native-php-sessions/zipball/7bd9c848efcd3eb2645646edf6c72ca0914cb5b5",
-                "reference": "7bd9c848efcd3eb2645646edf6c72ca0914cb5b5",
+                "url": "https://api.github.com/repos/pantheon-systems/wp-native-php-sessions/zipball/aa99229bdcdb1e366296fcf23afe1aa372c5d986",
+                "reference": "aa99229bdcdb1e366296fcf23afe1aa372c5d986",
                 "shasum": ""
             },
             "require-dev": {
@@ -327,9 +327,9 @@
             "description": "native PHP sessions stored in the database for WordPress.",
             "support": {
                 "issues": "https://github.com/pantheon-systems/wp-native-php-sessions/issues",
-                "source": "https://github.com/pantheon-systems/wp-native-php-sessions/tree/1.4.4"
+                "source": "https://github.com/pantheon-systems/wp-native-php-sessions/tree/1.4.5"
             },
-            "time": "2025-09-17T19:12:50+00:00"
+            "time": "2025-12-04T16:01:44+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -762,15 +762,15 @@
         },
         {
             "name": "wpackagist-theme/twentytwentyfive",
-            "version": "1.3",
+            "version": "1.4",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/twentytwentyfive/",
-                "reference": "1.3"
+                "reference": "1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentytwentyfive.1.3.zip"
+                "url": "https://downloads.wordpress.org/theme/twentytwentyfive.1.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -787,5 +787,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
